@@ -2,15 +2,23 @@
 Micro service for calculating the rewards
 
 # API exposed for the reward detail:
+- Sample API Request:
 http://localhost:8080/reward/customer/1/reward-details?beginDate=2022-01-01&endDate=2022-05-01
 
-If beginDate and endDate is optional.If not passed in request parameter previous 3 month detail will be provided in response.
+- Below is the  sample response:
 
-# Below is the response format:
+`{"monthlyRewardEarning":{"2022-01":115,"2022-02":650,"2022-03":950,"2022-04":1250},"totalRewardEarning":2965}`
+
+  beginDate and endDate is optional.If not passed in request parameter previous 3 month detail will be provided in response.
+
+# Notes:
+
+ - In memory H2 DB is used.
+ - More data can be inserted through data.sql file.
+ - Spring Security is not configured.
+ - Code up clean up is needed.
+ - Code Coverage 87 percen. (Need to add more UT)
 
 
-# In memory H2 DB is used.
-# More data can be inserted through data.sql file.
-
-{"monthlyRewardEarning":{"2022-01":115,"2022-02":650,"2022-03":950,"2022-04":1250},"totalRewardEarning":2965}
+<img width="741" alt="Screen Shot 2022-05-11 at 1 22 13 AM" src="https://user-images.githubusercontent.com/22434540/167774725-19a5d629-1a08-489f-8d57-7c8137108d40.png">
 

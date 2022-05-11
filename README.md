@@ -11,7 +11,7 @@ http://localhost:8080/reward/customer/1/reward-details?beginDate=2022-01-01&endD
 
 - Below is the  sample response:
 
-`{"monthlyRewardEarning":{"2022-01":115,"2022-02":650,"2022-03":950,"2022-04":1250},"totalRewardEarning":2965}`
+`{"monthlyRewardEarning":{"2022-01":110,"2022-02":450,"2022-03":650,"2022-04":850},"totalRewardEarning":2060}`
 
   beginDate and endDate is optional.If not passed in request parameter previous 3 month detail will be provided in response.
 
